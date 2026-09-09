@@ -1,92 +1,92 @@
-[ 0,000000] Linux версии 7.2.3-generic
-[ 0,000000] Командная страница: BOOT_IMAGE=/vmlinuz-7.2.3-generic quiet
-[ 0,000000] x86/fpu: Инициализированный FPU
-[ 0,000000] ЦП: доступно 8 логических процессоров
-[ 0,000000] Память: доступно 16384 МБ
+[    0.000000] Linux version 7.2.3-generic
+[    0.000000] Command line: BOOT_IMAGE=/vmlinuz-7.2.3-generic quiet
+[    0.000000] x86/fpu: FPU initialized
+[    0.000000] CPU: 8 logical processors available
+[    0.000000] Memory: 16384M available
 
-[ 0.418731] ядро: начата инициализация системы
-[ 0.419104] ядро: начата проверка оборудования
-[ 0,419881] ядрѾ: прѾцессѾр: статус=ОК
-[ 0,420117] ядрѾ: память: стѰтус=ОК
-[ 0,420894] ядро: хранилище: статус=ОК
-[ 0.421331] ядро: проверка оборудования завершена
+[    0.418731] kernel: system initialization started
+[    0.419104] kernel: hardware verification started
+[    0.419881] kernel: cpu: status=OK
+[    0.420117] kernel: memory: status=OK
+[    0.420894] kernel: storage: status=OK
+[    0.421331] kernel: hardware verification complete
 
-[ 0,632481] pkgmgr: загрузка базы данных пактов
-[ 0,633019] pkgmgr: наша проверка целостности
-[ 0,633774] pkgmgr: скачать сканирование скановленого пакета
-[ 0,641827] pkgmgr: paket=0xD095D0BBD0B5D0BDD0B0
-[ 0.642104] pkgmgr: state=INSTALLED
-[ 0,642491] pkgmgr: целостность=ПРОВЕРЕНО
-[ 0,642882] pkgmgr: зависимости=УДОВЛЕТВОРЕНО
-[ 0,643217] pkgmgr: проверка завершена
+[    0.632481] pkgmgr: loading package database
+[    0.633019] pkgmgr: integrity check started
+[    0.633774] pkgmgr: installed package scan started
+[    0.641827] pkgmgr: package=	
+[    0.642104] pkgmgr: state=INSTALLED
+[    0.642491] pkgmgr: integrity=VERIFIED
+[    0.642882] pkgmgr: dependencies=SATISFIED
+[    0.643217] pkgmgr: verification complete
 
-[ 0,781044] ядро: профиль возможностей загрузки
-[ 0,781521] ядро: профиль=СТАНДАРТ
-[ 0.782003] ядро: загружен профиль возможностей
-[ 0,782441] ядро: начата предметная оценка
+[    0.781044] kernel: loading capability profile
+[    0.781521] kernel: profile=STANDARD
+[    0.782003] kernel: capability profile loaded
+[    0.782441] kernel: subject evaluation started
 
-[ 0,812774] ядро: метрика[01]=100%
-[ 0,813116] ядро: метрика[02]=100%
-[ 0,813481] ядро: метрика[03]=100%
-[ 0,813927] ядро: метрика[04]=100%
-[ 0,814401] ядро: метрика[05]=100%
-[ 0,814892] ядро: метрика[05]=2147483647
-[ 0,815337] ядро: метрика[05]=ПЕРЕПОЛНЕНИЕ
+[    0.812774] kernel: metric[01]=100%
+[    0.813116] kernel: metric[02]=100%
+[    0.813481] kernel: metric[03]=100%
+[    0.813927] kernel: metric[04]=100%
+[    0.814401] kernel: metric[05]=100%
+[    0.814892] kernel: metric[05]=2147483647
+[    0.815337] kernel: metric[05]=OVERFLOW
 
-[ 0.815911] ядро: ВНИМАНИЕ: измерение превышает настроенный диапазон
-[ 0.816402] ядро: инициализирована измерительная подсистема
-[ 0,816887] ядро: состояние подсистемы измерения=OK
-[ 0,817294] ядро: начат перерасчет метрики [05]
-[ 0,817811] ядро: метрика[05]=ПЕРЕПОЛНЕНИЕ
+[    0.815911] kernel: WARNING: measurement exceeds configured range
+[    0.816402] kernel: measurement subsystem initialized
+[    0.816887] kernel: measurement subsystem status=OK
+[    0.817294] kernel: metric[05] recalculation started
+[    0.817811] kernel: metric[05]=OVERFLOW
 
-[ 0.818204] ядро: режим точности=РАСШИРЕННЫЙ
-[ 0,818733] ядро: инициализирована расширенная точность
-[ 0,819201] ядро: метрика[05]=ПЕРЕПОЛНЕНИЕ
+[    0.818204] kernel: precision mode=EXTENDED
+[    0.818733] kernel: extended precision initialized
+[    0.819201] kernel: metric[05]=OVERFLOW
 
-[ 0,819694] ядро: режим точности=64БИТ
-[ 0.820112] ядро: инициализировано с точностью 64 бита
-[ 0,820584] ядро: метрика[05]=ПЕРЕПОЛНЕНИЕ
+[    0.819694] kernel: precision mode=64BIT
+[    0.820112] kernel: 64-bit precision initialized
+[    0.820584] kernel: metric[05]=OVERFLOW
 
-[ 0,821017] ядро: режим точности=МАКСИМУМ
-[ 0,821443] ядро: инициализирована максимальная поддерживаемая точность
-[ 0,821921] ядро: метрика[05]=ПЕРЕПОЛНЕНИЕ
+[    0.821017] kernel: precision mode=MAXIMUM
+[    0.821443] kernel: maximum supported precision initialized
+[    0.821921] kernel: metric[05]=OVERFLOW
 
-[ 0.822447] ядро: запущен режим диагностики
-[ 0.822891] ядро: диагностика процессора=ПРОЙДЕНО
-[ 0.823417] ядро: диагностика памяти=ПРОЙДЕНО
-[ 0,823991] ядро: диагностика ядра=ПРОЙДЕНО
-[ 0,824381] ядро: механизм оценки=ОПЕРАЦИОННЫЙ
+[    0.822447] kernel: diagnostic mode started
+[    0.822891] kernel: cpu diagnostic=PASSED
+[    0.823417] kernel: memory diagnostic=PASSED
+[    0.823991] kernel: kernel diagnostic=PASSED
+[    0.824381] kernel: evaluation engine=OPERATIONAL
 
-[ 0,824817] ядро: ОШИБКА: превышен диапазон измерений
-[ 0,825231] ядро: код_ошибки=0x00000001
-[ 0,825719] ядро: причина=SUBJECT_EXCEEDS_SUPPORTED_PARAMETERS
+[    0.824817] kernel: ERROR: measurement range exceeded
+[    0.825231] kernel: error_code=0x00000001
+[    0.825719] kernel: cause=SUBJECT_EXCEEDS_SUPPORTED_PARAMETERS
 
-[ 0,826184] ядро: system_fault=FALSE
-[ 0,826691] ядро: hardware_fault=FALSE
-[ 0,827104] ядро: software_fault=FALSE
-[ 0,827541] ядро: memory_fault=FALSE
+[    0.826184] kernel: system_fault=FALSE
+[    0.826691] kernel: hardware_fault=FALSE
+[    0.827104] kernel: software_fault=FALSE
+[    0.827541] kernel: memory_fault=FALSE
 
-[ 0,827991] ядро: оценка=ИСКЛЮЧИТЕЛЬНО
-[ 0,828417] ядро: статус_измерения=OUT_OF_RANGE
-[ 0,828884] ядро: evaluation_status=НЕРАЗРЕШИМО
+[    0.827991] kernel: assessment=EXCEPTIONAL
+[    0.828417] kernel: measurement_status=OUT_OF_RANGE
+[    0.828884] kernel: evaluation_status=UNRESOLVABLE
 
-[ 0,829294] ядро: system_integrity=100%
-[ 0,829771] ядро: hardware_status=NORMAL
-[ 0,830217] ядро: software_status=NORMAL
-[ 0,830691] ядро: subject_status=EXCEPTIONAL
+[    0.829294] kernel: system_integrity=100%
+[    0.829771] kernel: hardware_status=NORMAL
+[    0.830217] kernel: software_status=NORMAL
+[    0.830691] kernel: subject_status=EXCEPTIONAL
 
-[ 0.831104] ядро: режим диагностики завершен
-[ 0,831541] ядро: корректирующее_действие=НЕТ
-[ 0,831991] ядро: damage_detected=FALSE
+[    0.831104] kernel: diagnostic mode terminated
+[    0.831541] kernel: corrective_action=NONE
+[    0.831991] kernel: damage_detected=FALSE
 
-[ 0,832417] ядро: заключено=PACKAGE_EXCEEDS_SYSTEM_CAPABILITY
-[ 0,832884] ядро: пакет=0xD095D0BBD0B5D0BDD0B0
-[ 0,833294] ядро: рекомендация=RETAIN_PACKAGE
-[ 0.833771] ядро: понижение=НЕ_РЕКОМЕНДУЕТСЯ
-[ 0.834217] ядро: удаление=НЕ_РЕКОМЕНДУЕТСЯ
+[    0.832417] kernel: conclusion=PACKAGE_EXCEEDS_SYSTEM_CAPABILITY
+[    0.832884] kernel: package=0xD095D0BBD0B5D0BDD0B0
+[    0.833294] kernel: recommendation=RETAIN_PACKAGE
+[    0.833771] kernel: downgrade=NOT_RECOMMENDED
+[    0.834217] kernel: removal=NOT_RECOMMENDED
 
-[ 0,834691] ядро: final_status=ALL_SYSTEMS_OPERATIONAL
-[ 0,835104] ядро: окончательная_оценка=ЗА ПРЕДЕЛАМИ_ИЗМЕРЕНИЯ
-[ 0,835541] ядро: system_state=NOMINAL
-[ 0,835991] ядро: evaluation_state=ЗАВЕРШЕНО
-[ 0,836417] ядро: система готова
+[    0.834691] kernel: final_status=ALL_SYSTEMS_OPERATIONAL
+[    0.835104] kernel: final_assessment=BEYOND_MEASUREMENT
+[    0.835541] kernel: system_state=NOMINAL
+[    0.835991] kernel: evaluation_state=COMPLETE
+[    0.836417] kernel: system ready
