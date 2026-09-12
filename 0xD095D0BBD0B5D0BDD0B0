@@ -1,5 +1,5 @@
-
-                  logs
+Logs
+Logs id=0xD095D0BBD0B5D0BDD0B0
 [    0.000000] Linux version 7.2.3-generic
 [    0.000000] Command line: BOOT_IMAGE=/vmlinuz-7.2.3-generic quiet
 [    0.000000] x86/fpu: FPU initialized
@@ -16,79 +16,172 @@
 [    0.632481] pkgmgr: loading package database
 [    0.633019] pkgmgr: integrity check started
 [    0.633774] pkgmgr: installed package scan started
-[    0.641827] pkgmgr: package=	
+[    0.641827] pkgmgr: package_id=0xD095D0BBD0B5D0BDD0B0
 [    0.642104] pkgmgr: state=INSTALLED
 [    0.642491] pkgmgr: integrity=VERIFIED
 [    0.642882] pkgmgr: dependencies=SATISFIED
 [    0.643217] pkgmgr: verification complete
+
+[    0.643604] pkgmgr: package selected for processing
+[    0.644018] pkgmgr: acquiring package handle
+[    0.644431] pkgmgr: package handle acquired
+[    0.644827] pkgmgr: processing request accepted
+[    0.645214] pkgmgr: package state=ACTIVE
+[    0.645601] pkgmgr: processing state=INITIALIZING
+[    0.645988] pkgmgr: package resources allocated
+[    0.646377] pkgmgr: processing state=INITIALIZED
+[    0.646791] pkgmgr: package lock=ACQUIRED
+[    0.647184] pkgmgr: system state=BUSY
 
 [    0.781044] kernel: loading capability profile
 [    0.781521] kernel: profile=STANDARD
 [    0.782003] kernel: capability profile loaded
 [    0.782441] kernel: subject evaluation started
 
+[    0.782817] kernel: evaluation target=ACTIVE_PACKAGE
+[    0.783204] kernel: active_package=0xD095D0BBD0B5D0BDD0B0
+[    0.783591] kernel: subject identification=VERIFIED
+[    0.783977] kernel: subject integrity=100%
+[    0.784364] kernel: subject classification=EXCEPTIONAL
+
 [    0.812774] kernel: metric[01]=100%
 [    0.813116] kernel: metric[02]=100%
 [    0.813481] kernel: metric[03]=100%
 [    0.813927] kernel: metric[04]=100%
 [    0.814401] kernel: metric[05]=100%
-[    0.814892] kernel: metric[05]=2147483647
-[    0.815337] kernel: metric[05]=OVERFLOW
 
-[    0.815911] kernel: WARNING: measurement exceeds configured range
+[    0.814892] kernel: metric[05]=2147483647
+[    0.815337] kernel: metric[05]=2147483648
+[    0.815911] kernel: WARNING: subject exceeds standard measurement range
+
 [    0.816402] kernel: measurement subsystem initialized
 [    0.816887] kernel: measurement subsystem status=OK
-[    0.817294] kernel: metric[05] recalculation started
+[    0.817294] kernel: extended measurement requested
 [    0.817811] kernel: metric[05]=OVERFLOW
-
-[    0.818204] kernel: precision mode=EXTENDED
+[    0.818204] kernel: numeric precision=EXTENDED
 [    0.818733] kernel: extended precision initialized
+
 [    0.819201] kernel: metric[05]=OVERFLOW
+[    0.819694] kernel: numeric representation=64BIT
+[    0.820112] kernel: 64-bit representation initialized
 
-[    0.819694] kernel: precision mode=64BIT
-[    0.820112] kernel: 64-bit precision initialized
 [    0.820584] kernel: metric[05]=OVERFLOW
-
-[    0.821017] kernel: precision mode=MAXIMUM
-[    0.821443] kernel: maximum supported precision initialized
+[    0.821017] kernel: attempting arbitrary-precision arithmetic
+[    0.821443] kernel: arbitrary precision initialized
 [    0.821921] kernel: metric[05]=OVERFLOW
 
-[    0.822447] kernel: diagnostic mode started
-[    0.822891] kernel: cpu diagnostic=PASSED
-[    0.823417] kernel: memory diagnostic=PASSED
-[    0.823991] kernel: kernel diagnostic=PASSED
-[    0.824381] kernel: evaluation engine=OPERATIONAL
+[    0.822447] kernel: maximum supported precision reached
+[    0.822891] kernel: measurement capacity=EXHAUSTED
+[    0.823417] kernel: subject remains OUT_OF_RANGE
 
-[    0.824817] kernel: ERROR: measurement range exceeded
-[    0.825231] kernel: error_code=0x00000001
-[    0.825719] kernel: cause=SUBJECT_EXCEEDS_SUPPORTED_PARAMETERS
+[    0.823991] kernel: diagnostic mode started
+[    0.824381] kernel: cpu diagnostic=PASSED
+[    0.824817] kernel: memory diagnostic=PASSED
+[    0.825231] kernel: kernel diagnostic=PASSED
+[    0.825719] kernel: evaluation engine=OPERATIONAL
 
-[    0.826184] kernel: system_fault=FALSE
-[    0.826691] kernel: hardware_fault=FALSE
-[    0.827104] kernel: software_fault=FALSE
-[    0.827541] kernel: memory_fault=FALSE
+[    0.826184] kernel: ERROR: subject cannot be represented within measurement range
+[    0.826691] kernel: error_code=0x00000001
+[    0.827104] kernel: cause=SUBJECT_EXCEEDS_SUPPORTED_RANGE
 
-[    0.827991] kernel: assessment=EXCEPTIONAL
-[    0.828417] kernel: measurement_status=OUT_OF_RANGE
-[    0.828884] kernel: evaluation_status=UNRESOLVABLE
+[    0.827541] kernel: system_fault=FALSE
+[    0.827991] kernel: hardware_fault=FALSE
+[    0.828417] kernel: hardware_fault=FALSE
+[    0.828884] kernel: software_fault=FALSE
+[    0.829294] kernel: memory_fault=FALSE
 
-[    0.829294] kernel: system_integrity=100%
-[    0.829771] kernel: hardware_status=NORMAL
-[    0.830217] kernel: software_status=NORMAL
-[    0.830691] kernel: subject_status=EXCEPTIONAL
+[    0.829771] kernel: assessment=EXCEPTIONAL
+[    0.830217] kernel: measurement_status=UNREPRESENTABLE
+[    0.830691] kernel: evaluation_status=BEYOND_CAPACITY
 
-[    0.831104] kernel: diagnostic mode terminated
-[    0.831541] kernel: corrective_action=NONE
-[    0.831991] kernel: damage_detected=FALSE
+[    0.831104] kernel: subject_status=EXCEPTIONAL
+[    0.831541] kernel: subject_integrity=100%
+[    0.831991] kernel: subject_fault=FALSE
+[    0.832417] kernel: damage_detected=FALSE
 
-[    0.832417] kernel: conclusion=PACKAGE_EXCEEDS_SYSTEM_CAPABILITY
-[    0.832884] kernel: package=0xD095D0BBD0B5D0BDD0B0
-[    0.833294] kernel: recommendation=RETAIN_PACKAGE
-[    0.833771] kernel: downgrade=NOT_RECOMMENDED
-[    0.834217] kernel: removal=NOT_RECOMMENDED
+[    0.832884] kernel: diagnostic mode terminated
+[    0.833294] kernel: evaluation resources released
 
-[    0.834691] kernel: final_status=ALL_SYSTEMS_OPERATIONAL
-[    0.835104] kernel: final_assessment=BEYOND_MEASUREMENT
-[    0.835541] kernel: system_state=NOMINAL
-[    0.835991] kernel: evaluation_state=COMPLETE
-[    0.836417] kernel: system ready
+[    0.833771] pkgmgr: package processing suspended
+[    0.834217] pkgmgr: package lock=RETAINED
+[    0.834691] pkgmgr: package state=ACTIVE
+[    0.835104] pkgmgr: release request=DENIED
+[    0.835541] pkgmgr: reason=EXCEPTIONAL_SUBJECT_REQUIRES_RETENTION
+
+[    0.835991] kernel: conclusion=SUBJECT_EXCEEDS_SYSTEM_MEASUREMENT_CAPABILITY
+[    0.836417] kernel: active_package=0xD095D0BBD0B5D0BDD0B0
+[    0.836884] kernel: recommendation=RETAIN_PACKAGE
+[    0.837294] kernel: downgrade=NOT_RECOMMENDED
+[    0.837771] kernel: removal=NOT_RECOMMENDED
+
+[    0.838184] kernel: system_integrity=100%
+[    0.838591] kernel: system_fault=FALSE
+[    0.838977] kernel: final_status=ALL_SYSTEMS_OPERATIONAL
+[    0.839364] kernel: final_assessment=SUBJECT_BEYOND_MEASUREMENT
+[    0.839751] kernel: system_state=NOMINAL
+[    0.840217] kernel: evaluation_state=COMPLETE
+
+[    0.840691] pkgmgr: package remains active
+[    0.841104] pkgmgr: package resources=RETAINED
+[    0.841541] pkgmgr: processing state=STANDBY
+[    0.841991] kernel: system ready
+
+888                                               888      d8b         888    888           888                   
+888                                               888      Y8P         888    888           888                   
+888                                               888                  888    888           888                   
+88888b.   8888b.  88888b.  88888b.  888  888      88888b.  888 888d888 888888 88888b.   .d88888  8888b.  888  888 
+888 "88b     "88b 888 "88b 888 "88b 888  888      888 "88b 888 888P"   888    888 "88b d88" 888     "88b 888  888 
+888  888 .d888888 888  888 888  888 888  888      888  888 888 888     888    888  888 888  888 .d888888 888  888 
+888  888 888  888 888 d88P 888 d88P Y88b 888      888 d88P 888 888     Y88b.  888  888 Y88b 888 888  888 Y88b 888 
+888  888 "Y888888 88888P"  88888P"   "Y88888      88888P"  888 888      "Y888 888  888  "Y88888 "Y888888  "Y88888 
+                  888      888           888                                                                  888 
+                  888      888      Y8b d88P                                                             Y8b d88P 
+                  888      888       "Y88P"                                                               "Y88P" 
+
+                                                                            
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+  .  .  .  .  .  .  .  .  .  .  .  .  .  . . . .  .  .  .  .  .  .  .  .  .  .  .  .
+. . . . . . . . . . . . . . . . . . . . . :%%%%#%:. . . . . . . . . . . . . . . . . 
+ .  .  .  .  .  .  .  .  .  .  .  .  . . .=@@%@@@*@@@@@- @.  .  .  .  .  .  .  .  . 
+  .  .  .  .  .  .  .  .  .  .  .  . ...@*:@@@@%%@%%@*+@@+%.  .  .  .  .  .  .  .  .
+.  . . . . . . . . . . . . . . . . .  :@:=@@=:@+#@+#@#@@@%@@= . . . . . . . . . . . 
+ . .  .  .  .  .  .  .  .  .  .  .  .:%-@@@@@@@@@@@@%@@%@@@-%@:* .  .  .  .  .  .  .
+ .  .  .  .  .  .  .  .  .  .  .  . ..#*@@@@@@%@@%@@#@@@%@@*@@: . .  .  .  .  .  .  
+ . . .  . . . .  . . . .  . . . .  .@@@@@@@@@@@@@@%@-%@@@#-@@@@=.. .  . . . .  . . .
+  .  . . .  .  . .  .  . . .  .  .=:@@@@@#@@@@@#@@*=@==@##@@@%.%*.  . .  .  . . .   
+.  .  .   .  . .  .  .  .   .  . .#=%@@@@@%@@@@@@@@@@@@@#@%#@@#@:. . . .  .  .   . .
+ . . . . . .  . .  . . . . . . .  %-#@@@@@%@@@@@@%@@@@@%%@#@@@@@@* .    .  .  . . . 
+ .  .   .  . .   . .  .   . -   . =@@%@@@@@@#@@*@=+-@=@@@@@@@%=%#@%+.. . . . . .   .
+ . . . . .  . . . . .  . ..#:.. . *@@@@@@@@@%%@%%@#%@%%@@@@@%@@@#@@*. .  .  .   ..  
+  .   .  . .   .   . .  .   %=+. .%=@@@@@@@@@@@@@@@@#@@%#@@@@@*%@*#. . .  .  . .  . 
+.  . . .  . . . . .   .  . . -+. ..%@@%@@@@@@@@@@@@@@@@%@@@-@@%@%..    . . . .  .  .
+ . .  . .   .  .  . . . . . .  ..::@@#@@@@@@@@@@@@@@@%%@@@@@:   .  . .  .  .  . . . 
+ .  .   . .  .  .  .  .  .  . . .#%@@@@=@@@@@@@@@@@@@%%@@@@:%+ . .  . .  .  . .  .  
+  . . .  . . . . .  .  .  .  .  . ......@@*@@@@@@@@@=@%=+..  .  . . .  . . .  . . . 
+. .  . .  .  .  . . . . .  .  .  .   . .@%-%@@%@@=@#-# .   .  .   .  . .  . .  .   .
+ . .  . .  .  .  .  .  . . . . .  . . .@* ..@@@@#:.. .  . . . . .  .  . .  . .  . . 
+    .  . . . . .  .  .  .  .  . .  . .=# . .......  . . .  .  . . . .  . .   . . .  
+. . . .   .  .  . . . .  .  .  . .  .=@:+    .    .   .  .  .  .  .  .  . . .  .  . 
+ . .  . .  .  . .  .  . . . . .   . .=@: . .  . . . .  . . . .  .  . . .   . .  .  .
+ .  .  . . . .   .  .  .  .  . . . . *.  . . . . .  . .  .  . . . .  .  . .   .  .  
+  . . .  .  . ..:*. . . .  .   .  . @%. .   .  .  .  . .  .  .   . .  . .  . . . . .
+. .  . .  .  .  #+:#=:@+.@@. .  .  -: .  . . . .@- .  . .  .  . .   . .  . . .  . . 
+ . .   . . .  . .%*@-+@@+@@#=.. . .:.- . ..%*@@*@@+#@... . . . . . . . .  .   .  .  
+    . .  .  . . . @@@@%@@@@@@@=. .#* . .@@@@@@@@@@@@%%@%@@ .  .  .  .   .  . . .  . 
+. . .  .  . .  .  .-@@+@@@@@@@@@. %=::#@@@@@@@@@@@@@@@@%@:. .  .  .  . . . .  . .  .
+ . . . . .   .  . . =*@%#@@@@@@@@@* .-@@@@@@@@@@@@@@@@@@-.   .  . . . .  .  .  . .  
+ .   .  . . . . .  . ..@#@@@@@@@@@%. @@@@@@@@@@@@@@@@@@:  . . . .  .   .  . . .   . 
+  . . .   .  .   .  .  . @@@@@@@@%-@#@@@@@@@@@@@@@@@#.. . .  .  . . . . . .  . . . .
+. .  . . . .  . . .  .  ..-@@@@@%-#. ..@@@@@@@@@@@@=.  . . .  .  .   .  .  .   .  . 
+ . .   .  . . .  . .  .  ..::---@: . ...:+#+#-----:  . .   . . .  . . .  .  ..  .  .
+  . . . .   .  .  . . . .   .  .@:. .  .  .  ..   . .   . .  .  . .  . .  .   . . . 
+.   .  . . . .  .  .  .  . .  .@-. .  . .  . . ..  . . . . .  . .  .  . . . . .  .  
+ . . .   .  . . . . .  .  . . .*@:  .    . . .   .  . .   . .  . .  .   .  . . .  . 
+ .  . . . .   .  .   . . .   .   . . . . .  . . . .  . . .   .  . . . .  .  .   . . 
+ . .   .  . .  .  . . .  . .  . .  .  . . .   .  . .   .  . . .   .  . . . . . .  . 
+ .  . . .  . . . . .   .  . . .  .  . .   . .  .  . . . . .  . . . .  .  .   .  .  .
+  . .  . .  .  .  . . . .  .  . . . .  . .  . . .  .  .  . .  . .   .  .  . . . . . 
+. .  .  . .  .  .   .  . .  .  .  .  .  . .  .  . . .  .   . .   . . . . . .   .  . 
